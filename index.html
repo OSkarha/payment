@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title></title>
+</head>
+<body>
+    <form action="#" method="post" class="form" >
+        <div class="form__head row">
+            <div class="row__item">
+                <div class="form__title">Harold Finch</div>
+                <div class="form__subtitle">Your total</div>
+            </div>
+            <div class="row__item">
+                <span class="form__total">$88</span>
+            </div>
+        </div>
+
+        <div class="form__body">
+            <div class="form__group">
+                <label class="form__label" for="number" >Credit card number</label>
+                <input class="form__input validate" type="text" name="number" pattern="\d*" value="" required>
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="month" >Expiration date</label>
+                <div class="row">
+                    <div class="row__item row__item--grow">
+                        <select name="month" class="form__input form__input--select validate" required>
+                            <option value="" selected disabled>Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                        </select>
+                    </div>
+                    <div class="row__item">
+                        <select name="year" class="form__input form__input--select validate" required>
+                            <option value="" selected disabled>Year</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="cvv" >CVV</label>
+                <div class="row">
+                    <div class="row__item ">
+                            <input class="form__input validate" type="password" pattern="\d*" minlength="3" maxlength="4" name="cvv" value="" required>
+                    </div>
+                    <div class="row__item row__item--grow">
+                        <span>
+                            3 or 4 digits - <a href="#">view example</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form__buttons">
+                <button type="submit" class="form__button" id="submit">Pay</button>
+                <a href="#">Cansel</a>
+            </div>
+        </div>
+    </form>
+    
+    <script src="js/scripts.js"></script>
+
+
+</body>
+</html>
